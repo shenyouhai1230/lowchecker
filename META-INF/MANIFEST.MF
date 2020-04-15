@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Checker
+Bundle-SymbolicName: com.syh.low.checker;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.syh.low.checker.Activator
+Bundle-Vendor: SYH
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.jcraft.jsch;bundle-version="0.1.42",
+ com.syh.low.checker.views;bundle-version="1.0.0",
+ com.syh.low.checker.web;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
