@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.syh.low.checker.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="lowchecker"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.syh.low.checker.application"
+            description="保命检查"
+            name="lowChecker">
+         <property
+               name="windowImages"
+               value="icons/favico.gif,icons/fa32.png">
+         </property>
+         <property
+               name="appName"
+               value="lowChecker">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.syh.low.checker.Perspective"
+            id="com.syh.low.checker.perspective"
+            name="Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.syh.low.checker.perspective">
+         <view
+               closeable="false"
+               id="com.syh.low.checker.talkView"
+               minimized="false"
+               ratio="0.3f"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               showTitle="false">
+         </view>
+         <view
+               id="com.syh.low.checker.view"
+               minimized="false"
+               relationship="stack"
+               relative="org.eclipse.ui.editorss"
+               showTitle="false">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

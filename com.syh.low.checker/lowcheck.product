@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="lowChecker" uid="com.syh.low.checker.lowchecker" id="com.syh.low.checker.lowchecker" application="com.syh.low.checker.application" version="1.0.0.20190715" useFeatures="false" includeLaunchers="false">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/com.syh.low.checker/icons/favico.gif" i32="/com.syh.low.checker/icons/fa32.png"/>
+
+   <launcher name="lchecker">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/com.syh.low.checker/icons/fawer1632.bmp"
+            winSmallLow="/com.syh.low.checker/icons/fawer168.bmp"
+            winMediumHigh="/com.syh.low.checker/icons/fgfh3232.bmp"
+            winMediumLow="/com.syh.low.checker/icons/fawer328.bmp"
+            winLargeHigh="/com.syh.low.checker/icons/fawer.bmp"
+            winLargeLow="/com.syh.low.checker/icons/fawer488.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</windows>
+   </vm>
+
+   <plugins>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="com.jcraft.jsch"/>
+      <plugin id="com.syh.low.checker"/>
+      <plugin id="com.syh.low.checker.utils"/>
+      <plugin id="com.syh.low.checker.views"/>
+      <plugin id="com.syh.low.checker.web"/>
+      <plugin id="javax.servlet"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.dom4j"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86.source"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.gjt.mm.mysql"/>
+   </plugins>
+
+
+</product>
