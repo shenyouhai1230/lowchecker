@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="com.syh.low.checker.login.LoginSplashHandler"
+            id="loginHandel">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="com.syh.low.checker.lowchecker"
+            splashId="loginHandel">
+      </splashHandlerProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.syh.low.checker.views.C2MView"
+            id="com.syh.low.checker.view"
+            name="c2m"
+            restorable="true">
+      </view>
+      <view
+            class="com.syh.low.checker.views.CpdtView"
+            id="com.syh.low.checker.cpdtview"
+            name="cpdt"
+            restorable="true">
+      </view>
+      <view
+            class="com.syh.low.checker.views.DataSourceView"
+            id="com.syh.low.checker.datasourceview"
+            name="dataSource"
+            restorable="true">
+      </view>
+      <view
+            class="com.syh.low.checker.views.ExcelView"
+            id="com.syh.low.checker.excelView"
+            name="excel"
+            restorable="true">
+      </view>
+      <view
+            class="com.syh.low.checker.views.TalkView"
+            id="com.syh.low.checker.talkView"
+            name="talk"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
